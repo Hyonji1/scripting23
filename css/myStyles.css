@@ -1,0 +1,95 @@
+/* this is my font here */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Tilt+Neon&display=swap');
+
+#masthead{
+    background-image: url("../images/for\ header\ banner\ colored.png");
+    background-size: cover;
+    background-position: center;
+}
+
+#about, #Portfolio, #hometown{
+  background-color: rgb(0, 0, 0);
+}
+nav{
+  font-family: 'Tilt Neon', sans-serif;
+}
+
+p{
+  font-family: 'Comfortaa', sans-serif;
+}
+
+h2,h5{
+  font-family: 'Tilt Neon', sans-serif;
+  font-size: 30px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+#portfolio{
+  color: rgb(0, 0, 0);
+}
+
+/*navigation code*/
+.social-icons {
+  margin-left: auto; /* Push the icons to the right */
+}
+
+.social-icons a {
+  color: #fff!important; /* Icon color */
+  font-size: 21px; /* Adjust the size as needed */
+  margin-left: 15px; /* Add space between icons */
+}
+.social-icons a i:hover{
+  color:#d207be!important;
+}
+.dark-bg{
+  background-color:#222!important;
+}
+/* CSS for black and white effect */
+.black-and-white {
+  filter: grayscale(100%); /* Convert the image to black and white */
+  transition: filter 0.3s; /* Add a smooth transition effect */
+}
+
+/* CSS for hover effect to restore color */
+.black-and-white:hover {
+  filter: grayscale(0%); /* Restore color on hover */
+}
+/*code for portfolio*/
+.Portfolio .col-sm-4 h4{
+  font-size:25px;
+  padding:10px 0;
+}
+.Portfolio .col-sm-4 p{
+  font-size:14px;
+}
+.fictional-link{
+  color: #d207be;
+}
+.fictional-link:hover{
+  color: black;
+}
+
+/*footer social media*/
+footer .social-media ul li{
+  display:inline-block;
+  padding:10px;
+}
+footer .social-media ul{
+  padding:0
+}
+
+/*this code is for the mobile view of the page*/
+@media only screen and (max-width: 768px){
+  .social-icons a {
+    margin-left: 0px!important; /* Add space between icons */
+    margin-right:15px;
+  }
+}
+
+.servicestitle{
+  color: white;
+}
+.servicestitle:hover{
+  color: rgb(237, 29, 195);
+}
