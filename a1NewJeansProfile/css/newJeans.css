@@ -1,0 +1,203 @@
+/*this is my font here*/
+@import url('https://fonts.googleapis.com/css2?family=Marck+Script&family=Onest&family=Young+Serif&display=swap');
+
+
+/******THIS IS MY DEFAULT STYLE*****BODY HERE******/
+body{
+    background-color: rgb(130, 165, 231);
+    font-family: 'Onest', sans-serif;
+    color: rgb(230, 247, 255);
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: 'Young Serif', serif;
+    font-size: 60px;
+    margin-bottom: 0px;
+    color: azure;
+    margin-top: 0;
+    
+}
+h2{
+  font-family: 'Young Serif', serif;
+  font-size: 30px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+
+h3{
+  font-family: 'Young Serif', serif;
+  font-size: 27px;
+
+}
+
+/*********************** HEADER HERE *******************************/
+
+header{
+    background-color: rgb(8, 8, 121);
+    color: antiquewhite;
+    /*****let's center the NEW JEANS text*******/
+    text-align: center;
+    left: auto;
+    right: auto;
+    width: 100%;
+    margin: 0%;
+    padding-top: 60px;
+}
+/*****this is the tagline**********/
+
+#differentITALIC{
+  color: rgb(176, 226, 253);
+  font-family: 'Marck Script', cursive;
+}
+
+
+/************************ NAVIGATION BAR ***************************/
+
+  .navbar {
+    overflow: hidden;
+    list-style-type: none;
+    margin: auto;
+    width: 100%;
+    padding: 10px 0;
+    transition: .3s;
+    background: #ffffff;
+    z-index: 99;
+ 
+  }
+
+  #sticky{
+    position: fixed;
+    /* top: 0; */
+    left: 0;
+  }
+  
+  .navbar.active {
+    background: rgba(0,0,0,.5);
+    padding: 0;
+  }
+  
+  .navbar.active .navbar-list {
+    margin: 10px 0;
+  }
+
+  .navbar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    margin: 0;
+   
+  }
+  
+  .navbar li {
+    display: inline;
+    margin: 0 20px;
+    text-transform: uppercase;
+    transition: .3s;
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    padding: 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition: .3s;
+  }
+
+  .navbar a:hover {
+    color:rgb(176, 226, 253);
+  }
+
+
+
+/************************ SECTION **********************************/
+
+section{
+  background-color: rgb(106, 146, 221);
+  /* no pixel amoun - use percentage or VW viewport width*/
+  width: 100vw;
+  /*center this section, BUT top and bottom pacing is none*/
+  /*top, bottom - left and right*/
+  margin: 0 auto;
+  /* add space inside the sections*/
+  /*fixed issue of the height not being recognized section*/
+  overflow: hidden;
+  padding: 25px;
+  box-sizing: border-box;
+
+}
+
+.description{
+  padding-top: 120px;
+}
+
+#Members-Profile{
+  background-image: url('../images/newjeansMembersdenim.jpeg');
+  background-size: 100%;
+  background-position: center;
+  padding: 120px 30px;
+  box-shadow: inset 0 0 0 2560px rgba(50, 38, 180, 0.5);
+  
+}
+
+.profile-description{
+  padding-top: 0;
+}
+
+
+/**************** CLASS - resuable bit of CSS that you can put on element*/
+/* it always starts with DOT  or PERIOD*/
+.alternate{
+  background-color: rgb(28, 65, 136);
+}
+
+section img{
+  float: left;
+  margin-right: 60px;
+}
+
+.references{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/*********************** FOOTER **********************************/
+
+footer{
+  background-color:  rgb(28, 65, 136);
+  text-align: center;
+  padding: 20px;
+  width: 100vw;
+  box-sizing: border-box;
+}
+.footer-external{
+  color: rgb(205, 17, 158);
+}
+.footer-external:visited{
+  color: rgb(235, 80, 219);
+}
+.footer-external:hover{
+  color:aqua;
+}
+
+/******STYLED LINKS IN HERE*******/
+
+a{
+  color: rgb(10, 12, 99);
+}
+
+a:visited{
+  color: rgb(60, 9, 137);
+}
+
+a:hover{
+  color: rgb(4, 4, 92);
+}
+/*pressing down*/
+a:active{
+  color: rgb(9, 21, 112);
+}
