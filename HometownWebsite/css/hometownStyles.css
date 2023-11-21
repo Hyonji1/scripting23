@@ -1,0 +1,355 @@
+/* this is my font here */
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Rubik&display=swap');
+* {
+  overflow-x: hidden;
+}
+
+html {font-size: 18px;}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  line-height: 1.65;
+}
+
+p {
+  font-size: 1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 150;
+  line-height: 1.15;
+}
+
+h1,
+.text-size-h1 {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 3.05em;
+}
+a{
+  text-decoration: none !important;
+}
+h2,
+.text-size-h2 { font-size: 2.44em; }
+
+h3,
+.text-size-h3 { font-size: 1.95em; }
+
+h4,
+.text-size-h4 { font-size: 1.56em; }
+
+h5,
+.text-size-h5 { font-size: 1.25em; }
+
+.text-caption { font-size: 0.8em; }
+
+small,
+.text-small {
+  font-size: 0.64em;
+}
+
+.navbar{
+  z-index: 9;
+  background-color: rgb(42 42 42 / 88%) !important;
+  padding: 20px 0 !important;
+
+}
+/*--------------------------------------------------------------
+# Hero Section
+--------------------------------------------------------------*/
+#hero {
+  width: 100%;
+  height: 70vh;
+  border-bottom: 2px solid #fcebe3;
+  background-size: cover;
+  background-position: center;
+}
+
+
+#hero h2 {
+  margin: 15px 0 0 0;
+  font-size: 24px;
+}
+
+#hero .btn-get-started {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 28px;
+  border-radius: 3px;
+  transition: 0.5s;
+  margin-top: 30px;
+  color: #fff;
+  background: #eb5d1e;
+}
+
+#hero .btn-get-started:hover {
+  background: #ef7f4d;
+}
+
+#hero .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    height: calc(100vh - 72px);
+  }
+
+  #hero .animated {
+    animation: none;
+  }
+
+  #hero .hero-img {
+    text-align: center;
+  }
+
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@media (max-height: 600px) {
+  #hero {
+    height: 120vh;
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+  overflow: hidden;
+}
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-foreground {
+    height: 300%;
+    top: -100%;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+  }
+}
+@media all and (max-width: 600px) {
+  .vid-info {
+    width: 50%;
+    padding: 0.5rem;
+  }
+  .vid-info h1 {
+    margin-bottom: 0.2rem;
+  }
+}
+@media all and (max-width: 500px) {
+  .vid-info .acronym {
+    display: none;
+  }
+}
+
+
+#logo{
+  font-size: 30px;
+    min-width: 260px;
+}
+.geography{
+  background-position: center;
+  background-image: url("../images/moaboal.jpg");
+
+}
+.people-page{
+  background-position: center;
+  background-image: url("../images/people.jpg");
+}
+.economy-page{
+  background-position: center;
+  background-image: url("../images/cclex.jpg");
+}
+.attraction-page{
+  background-position: center;
+  background-image: url("../images/attraction-header2.jpg");
+}
+
+.attractions-cont{
+  background-color: rgb(60, 161, 161);
+}
+.econ-Cebu-prefooter{
+  background-position: center;
+  background-image: url("../images/cebu-night2-dark.jpg");
+  background-size: cover;
+}
+.tourism-prefooter{
+  background-position: center;
+  background-image: url("../images/attraction.jpg");
+  background-size: cover;
+}
+#map{
+  background-image: url("../images/geographyMap.jpg");
+}
+
+#cebu{
+  background-color: rgb(60, 161, 161);
+}
+
+#oldCebu{
+  background-image: url("../images/cebu-night.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+p{
+font-family: 'Karla', sans-serif;
+}
+
+.big-text{
+  font-size: 70px;
+  font-style: normal;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  text-transform: none;
+  text-shadow: 0px 0px 10px #293938;
+}
+
+
+/*navigation code*/
+.social-icons {
+  margin-left: auto; /* Push the icons to the right */
+}
+
+.social-icons a {
+  color: #fff!important; /* Icon color */
+  font-size: 21px; /* Adjust the size as needed */
+  margin-left: 15px; /* Add space between icons */
+}
+.social-icons a i:hover{
+  color:#d207be!important;
+}
+.dark-bg{
+  background-color:#222!important;
+}
+/* CSS for black and white effect */
+.black-and-white {
+  filter: grayscale(100%); /* Convert the image to black and white */
+  transition: filter 0.3s; /* Add a smooth transition effect */
+}
+
+/* CSS for hover effect to restore color */
+.black-and-white:hover {
+  filter: grayscale(0%); /* Restore color on hover */
+}
+/*code for portfolio*/
+.Portfolio .col-sm-4 h4{
+  font-size:25px;
+  padding:10px 0;
+}
+.Portfolio .col-sm-4 p{
+  font-size:14px;
+}
+.fictional-link{
+  color: #d207be;
+}
+.fictional-link:hover{
+  color: black;
+}
+
+/*footer social media*/
+footer .social-media ul li{
+  display:inline-block;
+  padding:10px;
+}
+footer .social-media ul{
+  padding:0
+}
+
+/*this code is for the mobile view of the page*/
+@media only screen and (max-width: 768px){
+  .social-icons a {
+    margin-left: 0px!important; /* Add space between icons */
+    margin-right:15px;
+  }
+}
+
+.servicestitle:hover{
+  color: rgb(237, 29, 195);
+}
+/*Color white*/
+.white-bg{
+  background: #fff;
+}
+
+.text-color-white{
+  color:#fff
+}
+
+.text-color-black{
+  color:#000
+}
+.site-color-bg{
+ background-color: rgb(60, 161, 161);
+
+}
+.light-gray-bg{
+  background-color: #cbcbcb;
+}
+.site-color-text{
+  color: rgb(60, 161, 161);
+}
+.responsive-map iframe {
+  width: 100vw;
+}
